@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>HomerBeer</title>
+    <link rel="stylesheet" href="style.css?ver=1">
+
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+</head>
+
+<body>
+    <div id="screen-bear" class="screen screen-bar-item hidden">
+        <div class="screen-bar-item-title">beer</div>
+        <div class="screen-bar-item-img">
+
+        </div>
+        <div class="btn-wrapper secondary-btn red-shadow" ontouchstart>
+            <div class="btn">
+                Drink
+            </div>
+
+        </div>
+        <div class="btn-back" onclick=" hideScreenBear()" ontouchstart>
+            <svg width="1.31rem" height="2.25rem" viewBox="0 0 21 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M17.8745 35.3324C17.4676 35.3329 17.0647 35.2527 16.6888 35.0966C16.313 34.9405 15.9716 34.7116 15.6843 34.4229L1.44694 20.1553C1.15901 19.8672 0.93059 19.5251 0.774739 19.1485C0.618887 18.7719 0.538666 18.3682 0.538666 17.9605C0.538666 17.5528 0.618887 17.1491 0.774739 16.7725C0.93059 16.3959 1.15901 16.0538 1.44694 15.7657L15.6843 1.49809C15.972 1.20987 16.3134 0.981243 16.6892 0.825258C17.065 0.669273 17.4677 0.588989 17.8745 0.588989C18.2812 0.588989 18.684 0.669273 19.0598 0.825258C19.4355 0.981243 19.777 1.20987 20.0646 1.49809C20.3522 1.78632 20.5804 2.12849 20.736 2.50507C20.8917 2.88165 20.9718 3.28527 20.9718 3.69287C20.9718 4.10048 20.8917 4.5041 20.736 4.88068C20.5804 5.25726 20.3522 5.59943 20.0646 5.88765L8.01733 17.9605L20.0646 30.0333C20.4992 30.4669 20.7955 31.0201 20.9158 31.6227C21.0362 32.2253 20.9751 32.8501 20.7405 33.4179C20.5058 33.9857 20.1081 34.4708 19.5978 34.8117C19.0875 35.1525 18.4877 35.3338 17.8745 35.3324Z"
+                    fill="black" />
+            </svg>
+            <span>Back</span>
+        </div>
+    </div>
+    <div id="screen-scotch" class="screen screen-bar-item hidden">
+        <div class="screen-bar-item-title">beer</div>
+        <div class="screen-bar-item-img">
+
+        </div>
+        <div class="btn-wrapper secondary-btn red-shadow" ontouchstart>
+            <div class="btn">
+                Drink
+            </div>
+
+        </div>
+        <div class="btn-back" onclick=" hideScreenScotch()" ontouchstart>
+            <svg width="1.31rem" height="2.25rem" viewBox="0 0 21 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M17.8745 35.3324C17.4676 35.3329 17.0647 35.2527 16.6888 35.0966C16.313 34.9405 15.9716 34.7116 15.6843 34.4229L1.44694 20.1553C1.15901 19.8672 0.93059 19.5251 0.774739 19.1485C0.618887 18.7719 0.538666 18.3682 0.538666 17.9605C0.538666 17.5528 0.618887 17.1491 0.774739 16.7725C0.93059 16.3959 1.15901 16.0538 1.44694 15.7657L15.6843 1.49809C15.972 1.20987 16.3134 0.981243 16.6892 0.825258C17.065 0.669273 17.4677 0.588989 17.8745 0.588989C18.2812 0.588989 18.684 0.669273 19.0598 0.825258C19.4355 0.981243 19.777 1.20987 20.0646 1.49809C20.3522 1.78632 20.5804 2.12849 20.736 2.50507C20.8917 2.88165 20.9718 3.28527 20.9718 3.69287C20.9718 4.10048 20.8917 4.5041 20.736 4.88068C20.5804 5.25726 20.3522 5.59943 20.0646 5.88765L8.01733 17.9605L20.0646 30.0333C20.4992 30.4669 20.7955 31.0201 20.9158 31.6227C21.0362 32.2253 20.9751 32.8501 20.7405 33.4179C20.5058 33.9857 20.1081 34.4708 19.5978 34.8117C19.0875 35.1525 18.4877 35.3338 17.8745 35.3324Z"
+                    fill="black" />
+            </svg>
+            <span>Back</span>
+        </div>
+    </div>
+    <div id="screen-whiskey" class="screen screen-bar-item hidden">
+        <div class="screen-bar-item-title">beer</div>
+        <div class="screen-bar-item-img">
+
+        </div>
+        <div class="btn-wrapper secondary-btn red-shadow" ontouchstart>
+            <div class="btn">
+                Drink
+            </div>
+
+        </div>
+        <div class="btn-back" onclick=" hidescreenWhiskey()" ontouchstart>
+            <svg width="1.31rem" height="2.25rem" viewBox="0 0 21 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M17.8745 35.3324C17.4676 35.3329 17.0647 35.2527 16.6888 35.0966C16.313 34.9405 15.9716 34.7116 15.6843 34.4229L1.44694 20.1553C1.15901 19.8672 0.93059 19.5251 0.774739 19.1485C0.618887 18.7719 0.538666 18.3682 0.538666 17.9605C0.538666 17.5528 0.618887 17.1491 0.774739 16.7725C0.93059 16.3959 1.15901 16.0538 1.44694 15.7657L15.6843 1.49809C15.972 1.20987 16.3134 0.981243 16.6892 0.825258C17.065 0.669273 17.4677 0.588989 17.8745 0.588989C18.2812 0.588989 18.684 0.669273 19.0598 0.825258C19.4355 0.981243 19.777 1.20987 20.0646 1.49809C20.3522 1.78632 20.5804 2.12849 20.736 2.50507C20.8917 2.88165 20.9718 3.28527 20.9718 3.69287C20.9718 4.10048 20.8917 4.5041 20.736 4.88068C20.5804 5.25726 20.3522 5.59943 20.0646 5.88765L8.01733 17.9605L20.0646 30.0333C20.4992 30.4669 20.7955 31.0201 20.9158 31.6227C21.0362 32.2253 20.9751 32.8501 20.7405 33.4179C20.5058 33.9857 20.1081 34.4708 19.5978 34.8117C19.0875 35.1525 18.4877 35.3338 17.8745 35.3324Z"
+                    fill="black" />
+            </svg>
+            <span>Back</span>
+        </div>
+    </div>
+    <div id="friends" class="screen screen-friends hidden">
+        <div class="header-screen"></div>
+        <div class="friends-screen-wrapper">
+            <div class="screen-title">Drinking buddies</div>
+            <div class="white-bg">
+                <div class="friend-items">
+                    <div class="friend-item">
+                        <div class="friend-item-wrapper">
+                            <div class="friend-item-icon"></div>
+                            <div class="friend-item-desc">
+                                <div class="friend-item-title">Nickname</div>
+                                <div class="friend-item-ton">0.00 Ton</div>
+                            </div>
+                        </div>
+                        <div class="btn-open">Open</div>
+                    </div>
+                    <div class="friend-item">
+                        <div class="friend-item-wrapper">
+                            <div class="friend-item-icon"></div>
+                            <div class="friend-item-desc">
+                                <div class="friend-item-title">Nickname</div>
+                                <div class="friend-item-ton">0.00 Ton</div>
+                            </div>
+                        </div>
+                        <div class="btn-open">Open</div>
+                    </div>
+                    <div class="friend-item">
+                        <div class="friend-item-wrapper">
+                            <div class="friend-item-icon"></div>
+                            <div class="friend-item-desc">
+                                <div class="friend-item-title">Nickname</div>
+                                <div class="friend-item-ton">0.00 Ton</div>
+                            </div>
+                        </div>
+                        <div class="btn-open">Open</div>
+                    </div>
+                    <div class="friend-item">
+                        <div class="friend-item-wrapper">
+                            <div class="friend-item-icon"></div>
+                            <div class="friend-item-desc">
+                                <div class="friend-item-title">Nickname</div>
+                                <div class="friend-item-ton">0.00 Ton</div>
+                            </div>
+                        </div>
+                        <div class="btn-open">Open</div>
+                    </div>
+                    <div class="friend-item">
+                        <div class="friend-item-wrapper">
+                            <div class="friend-item-icon"></div>
+                            <div class="friend-item-desc">
+                                <div class="friend-item-title">Nickname</div>
+                                <div class="friend-item-ton">0.00 Ton</div>
+                            </div>
+                        </div>
+                        <div class="btn-open">Open</div>
+                    </div>
+                </div>
+            </div>
+            <div class="progress-prm">
+                <div class="prm-wrapper">
+                    <span>PRM</span>
+                    <span claas="prm-count">0</span>
+                    <span>%</span>
+                </div>
+                <div class="prm-progress-bar">
+                    <div class="prm-progress-line" style="width: 0%;"></div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div id="bar" class="screen screen-bar hidden">
+        <div class="header-screen"></div>
+        <div class="screen-bar-wrapper">
+            <div class="screen-title">Bar</div>
+            <div class="screen-desc">Description of drinks</div>
+            <div class="bar">
+                <div class="bar-items">
+                    <div class="bar-item beer click">
+                        <div class="bar-item-img"></div>
+                        <div class="btn-buy" onclick="showScreenBear()" ontouchstart>BUY</div>
+                    </div>
+                    <div class="bar-item scotch">
+                        <div class="bar-item-img"></div>
+                        <div class="btn-buy" onclick="showScreenScotch()" ontouchstart>BUY</div>
+                    </div>
+                    <div class="bar-item whiskey">
+                        <div class="bar-item-img"></div>
+                        <div class="btn-buy" onclick="showscreenWhiskey()" ontouchstart>BUY</div>
+                    </div>
+                </div>
+            </div>
+            <div class="progress-prm">
+                <div class="prm-wrapper">
+                    <span>PRM</span>
+                    <span claas="prm-count">0</span>
+                    <span>%</span>
+                </div>
+                <div class="prm-progress-bar">
+                    <div class="prm-progress-line" style="width: 0%;"></div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="screen game-screen">
+        <div class="header">
+            <div class="header-item">
+                <div class="ton-wrapper" onclick=" showfair()" ontouchstart>
+                    <div>
+                        <span id="ton-count">0.00</span>
+                        <span>TON</span>
+                    </div>
+
+                </div>
+            </div>
+            <div class="header-item">
+                <div class="hom-wrapper" onclick=" showtopUp()" ontouchstart>
+                    <div>
+                        <span id="hom-count">0.00</span>
+                        <span>HOM</span>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+        <div class="progress-prm">
+            <div class="prm-wrapper">
+                <span>PRM</span>
+                <span claas="prm-count">0</span>
+                <span>%</span>
+            </div>
+            <div class="prm-progress-bar">
+                <div class="prm-progress-line" style="width: 0%;"></div>
+            </div>
+        </div>
+        <div class="game">
+            <div class="btn-info-wrapper">
+                <div class="btn-info" onclick="showInfo()" ontouchstart>
+                    <div class="info-img"></div>
+                </div>
+                <div class="text-info">INFO</div>
+            </div>
+
+        </div>
+        <div class="footer">
+            <div class="btn-wrapper primary-btn">
+                <div class="btn">
+                    DRINK
+                </div>
+            </div>
+            <div class="footer-nav">
+                <div id="bar-btn" class="footer-item" ontouchstart>
+                    <div class="footer-icon">
+                        <svg width="1.125rem" height="1.56rem" viewBox="0 0 18 25" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M3.86755 8.52536V8.52499V1.42397C3.86755 1.29331 3.91972 1.16791 4.01274 1.07537C4.10577 0.982821 4.23205 0.930743 4.36382 0.930743H5.82868C5.96045 0.930743 6.08673 0.982821 6.17976 1.07537C6.27278 1.16791 6.32495 1.29331 6.32495 1.42397L6.32495 8.5349L6.32495 8.53507C6.3252 8.67124 6.37959 8.80169 6.47608 8.89799L6.47618 8.89809C8.06773 10.4814 8.9617 12.6287 8.9617 14.8676V22.7841C8.9617 23.1244 8.82582 23.4509 8.5838 23.6917C8.34176 23.9324 8.01338 24.0678 7.67089 24.0678H2.14191C1.47671 24.0678 0.937823 23.5316 0.937823 22.8704L0.937823 15.0688C0.937823 15.0688 0.937823 15.0688 0.937823 15.0687C0.938227 13.9058 1.18419 12.7558 1.65981 11.6934C2.13543 10.6309 2.8301 9.6797 3.69885 8.9013L3.69899 8.90118C3.75176 8.85369 3.79403 8.79574 3.82306 8.73103C3.8521 8.66631 3.86726 8.59626 3.86755 8.52536ZM2.02004 15.3241H1.93036V15.4138V20.0771V20.1668H2.02004H7.87949H7.96917V20.0771V15.4138V15.3241H7.87949H2.02004ZM15.8712 12.5889H15.971L15.9604 12.4897L15.5859 8.99226L15.5774 8.91213H15.4968H11.9811H11.9005L11.8919 8.99225L11.5169 12.4897L11.5063 12.5889H11.6061H15.8712ZM14.3096 17.0252L14.2352 17.0381V17.1136V22.9917V23.0813H14.3249H16.0827C16.2145 23.0813 16.3408 23.1334 16.4338 23.226C16.5268 23.3185 16.579 23.4439 16.579 23.5746C16.579 23.7052 16.5268 23.8306 16.4338 23.9232C16.3408 24.0157 16.2145 24.0678 16.0827 24.0678H11.3952C11.2634 24.0678 11.1371 24.0157 11.0441 23.9232C10.9511 23.8306 10.8989 23.7052 10.8989 23.5746C10.8989 23.4439 10.9511 23.3185 11.0441 23.226C11.1371 23.1334 11.2634 23.0813 11.3952 23.0813H13.153H13.2427V22.9917V17.113V17.0375L13.1683 17.0246C12.3342 16.88 11.5866 16.4255 11.0767 15.7533C10.5669 15.0811 10.3329 14.2414 10.422 13.4041L11.007 7.92567H16.4709L17.0559 13.4041C17.1451 14.2415 16.9112 15.0813 16.4014 15.7537C15.8915 16.426 15.1438 16.8806 14.3096 17.0252Z"
+                                fill="url(#paint0_linear_91_991)" stroke="black" stroke-width="0.179357" />
+                            <defs>
+                                <linearGradient id="paint0_linear_91_991" x1="9.00615" y1="0.841064" x2="9.00615"
+                                    y2="24.1575" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#FF0000" />
+                                    <stop offset="0.595" stop-color="#990000" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+
+                    </div>
+                    <div class="footer-name">BAR</div>
+                </div>
+                <div id="friends-btn" class="footer-item" ontouchstart>
+                    <div class="footer-icon">
+                        <svg width="1.56rem" height="1.56rem" viewBox="0 0 25 25" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M12.2683 24.0678H12.2684C12.7366 24.0686 13.204 24.0347 13.6664 23.9665C11.9311 22.6462 10.8189 20.6123 10.8189 18.3285C10.8189 18.3284 10.8189 18.3284 10.8189 18.3284H10.9086C10.908 17.7024 10.9939 17.0793 11.1641 16.475L12.2683 24.0678ZM12.2683 24.0678C8.03286 24.0678 5.5596 21.4654 5.5596 18.976L5.5596 18.3284L5.5596 18.3281C5.55892 18.0852 5.60863 17.8444 5.706 17.6196C5.80337 17.3948 5.94656 17.1903 6.12754 17.0178C6.30852 16.8454 6.52374 16.7085 6.7609 16.6153C6.99807 16.5221 7.25239 16.4744 7.50919 16.475H7.50942H11.071L12.2683 24.0678ZM7.07983 11.5279C7.07706 10.7721 7.25832 10.0268 7.60823 9.35055H2.07075C1.55226 9.35055 1.05583 9.54682 0.690464 9.89491C0.325246 10.2428 0.120929 10.7138 0.120929 11.2039V11.8516C0.120929 13.8423 1.69807 15.9029 4.49617 16.6494C4.79776 16.157 5.22696 15.7468 5.74256 15.4581C6.27845 15.1581 6.88843 15.0001 7.50942 15.0003C7.50943 15.0003 7.50944 15.0003 7.50945 15.0003H8.57173C8.12625 14.57 7.76688 14.0646 7.51238 13.5089C7.22626 12.8842 7.07894 12.2097 7.07983 11.5279ZM7.07983 11.5279C7.07983 11.5278 7.07983 11.5277 7.07983 11.5276L7.16951 11.5277L7.07983 11.5281C7.07983 11.528 7.07983 11.5279 7.07983 11.5279ZM15.0844 9.31963L15.0844 9.31968C15.6011 9.91459 15.9124 10.6763 15.9176 11.5067C14.1037 12.1063 12.5944 13.3389 11.6948 14.9574C11.0745 14.8635 10.4901 14.6188 9.99817 14.2468C9.49029 13.8629 9.09948 13.3573 8.86545 12.7825C8.63144 12.2077 8.56247 11.5841 8.66548 10.9757C8.76849 10.3674 9.03985 9.79568 9.45216 9.31963C10.1206 8.54888 11.1334 8.0552 12.2683 8.0552C13.4031 8.0552 14.4159 8.54888 15.0844 9.31963ZM24.4156 11.8516C24.4156 12.4173 24.2889 12.9884 24.0419 13.5342C23.2315 12.6638 22.2114 11.9932 21.069 11.5806C19.9134 11.1632 18.6686 11.0225 17.4438 11.1703C17.3979 10.5373 17.2231 9.91925 16.9295 9.35055H22.4658C22.9843 9.35055 23.4807 9.54682 23.8461 9.89491C24.2113 10.2428 24.4156 10.7138 24.4156 11.2039V11.8516ZM6.82959 0.930743C7.79884 0.930743 8.72756 1.2976 9.41166 1.94935C10.0956 2.60095 10.479 3.48376 10.479 4.40329C10.479 5.32283 10.0956 6.20564 9.41166 6.85724C8.72756 7.50898 7.79884 7.87584 6.82959 7.87584C5.86034 7.87584 4.93161 7.50898 4.24751 6.85724C3.56356 6.20564 3.18018 5.32283 3.18018 4.40329C3.18018 3.48376 3.56356 2.60095 4.24751 1.94935C4.93161 1.2976 5.86034 0.930743 6.82959 0.930743ZM17.7069 0.930743C18.6762 0.930743 19.6049 1.2976 20.289 1.94935C20.973 2.60095 21.3563 3.48376 21.3563 4.40329C21.3563 5.32283 20.973 6.20564 20.289 6.85724C19.6049 7.50898 18.6762 7.87584 17.7069 7.87584C16.7377 7.87584 15.809 7.50898 15.1249 6.85724C14.4409 6.20564 14.0575 5.32283 14.0575 4.40329C14.0575 3.48376 14.4409 2.60095 15.1249 1.94935C15.809 1.2976 16.7377 0.930743 17.7069 0.930743ZM22.6513 22.3852C21.521 23.4621 19.9871 24.0678 18.3868 24.0678C16.7865 24.0678 15.2525 23.4621 14.1222 22.3852C12.992 21.3085 12.3579 19.8491 12.3579 18.3284C12.3579 16.8076 12.992 15.3482 14.1222 14.2715C15.2525 13.1946 16.7865 12.5889 18.3868 12.5889C19.9871 12.5889 21.521 13.1946 22.6513 14.2715C23.7815 15.3482 24.4156 16.8076 24.4156 18.3284C24.4156 19.8491 23.7815 21.3085 22.6513 22.3852ZM18.9293 15.2147C18.7847 15.077 18.5895 15.0003 18.3868 15.0003C18.184 15.0003 17.9888 15.077 17.8442 15.2147C17.6994 15.3527 17.6173 15.5407 17.6173 15.7377V17.591H15.6674C15.4647 17.591 15.2695 17.6677 15.1249 17.8055C14.9801 17.9434 14.8979 18.1314 14.8979 18.3284C14.8979 18.5254 14.9801 18.7134 15.1249 18.8513C15.2695 18.989 15.4647 19.0657 15.6674 19.0657H17.6173V20.9191C17.6173 21.1161 17.6994 21.3041 17.8442 21.442C17.9888 21.5797 18.184 21.6564 18.3868 21.6564C18.5895 21.6564 18.7847 21.5797 18.9293 21.442C19.0741 21.3041 19.1563 21.1161 19.1563 20.9191V19.0657H21.1061C21.3088 19.0657 21.5041 18.989 21.6487 18.8513C21.7934 18.7134 21.8756 18.5254 21.8756 18.3284C21.8756 18.1314 21.7934 17.9434 21.6487 17.8055C21.5041 17.6677 21.3088 17.591 21.1061 17.591H19.1563V15.7377C19.1563 15.5407 19.0741 15.3527 18.9293 15.2147Z"
+                                fill="url(#paint0_linear_91_997)" stroke="black" stroke-width="0.179357" />
+                            <defs>
+                                <linearGradient id="paint0_linear_91_997" x1="12.2683" y1="0.841064" x2="12.2683"
+                                    y2="24.1575" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#FF0000" />
+                                    <stop offset="0.595" stop-color="#990000" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+
+                    </div>
+                    <div class="footer-name">FRIENDS</div>
+                </div>
+                <div id="home-btn" class="footer-item open" ontouchstart>
+                    <div class="footer-icon">
+                        <svg width="1.6875rem" height="1.56rem" viewBox="0 0 27 25" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M26.1663 14.6984L13.6211 4.8376L13.5657 4.79404L13.5103 4.8376L0.965167 14.6984V10.8595L13.5657 0.95513L26.1663 10.8595V14.6984ZM22.9937 14.5644V24.0678H16.828V17.7325V17.6428H16.7383H10.3932H10.3035V17.7325V24.0678H4.13773V14.5644L13.5657 7.4044L22.9937 14.5644Z"
+                                fill="url(#paint0_linear_91_996)" stroke="black" stroke-width="0.179357" />
+                            <defs>
+                                <linearGradient id="paint0_linear_91_996" x1="13.5657" y1="0.841064" x2="13.5657"
+                                    y2="24.1575" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#FF0000" />
+                                    <stop offset="0.595" stop-color="#990000" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+
+                    </div>
+                    <div class="footer-name">HOME</div>
+                </div>
+                <div id="rates-btn" class="footer-item" ontouchstart>
+                    <div class="footer-icon">
+                        <svg width="1.4375rem" height="1.5rem" viewBox="0 0 23 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M10.8708 6.11853H13.288V17.7767H10.8708V6.11853ZM15.7052 13.1135H18.1224V17.7767H15.7052V13.1135Z"
+                                fill="url(#paint0_linear_91_985)" />
+                            <path
+                                d="M20.1369 20.6664H2.51156V3.22886H13.8421V0.737793H2.51156C1.12671 0.737793 -0.00634766 1.85877 -0.00634766 3.22886V20.6664C-0.00634766 22.0364 1.12671 23.1574 2.51156 23.1574H20.1369C21.5217 23.1574 22.6548 22.0364 22.6548 20.6664V9.45654H20.1369V20.6664Z"
+                                fill="url(#paint1_linear_91_985)" />
+                            <path
+                                d="M6.33862 9.25725H8.66948V17.7767H6.33862V9.25725ZM20.3238 3.17192V0.737793H17.9929V3.17192H15.6621V5.60606H17.9929V8.04019H20.3238V5.60606H22.6546V3.17192H20.3238Z"
+                                fill="url(#paint2_linear_91_985)" />
+                            <defs>
+                                <linearGradient id="paint0_linear_91_985" x1="14.4966" y1="6.11853" x2="14.4966"
+                                    y2="17.7767" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#FF0000" />
+                                    <stop offset="0.595" stop-color="#990000" />
+                                </linearGradient>
+                                <linearGradient id="paint1_linear_91_985" x1="11.3242" y1="0.737793" x2="11.3242"
+                                    y2="23.1574" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#FF0000" />
+                                    <stop offset="0.595" stop-color="#990000" />
+                                </linearGradient>
+                                <linearGradient id="paint2_linear_91_985" x1="14.4966" y1="0.737793" x2="14.4966"
+                                    y2="17.7767" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#FF0000" />
+                                    <stop offset="0.595" stop-color="#990000" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+
+                    </div>
+                    <div class="footer-name">RATES</div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div id="info" class="screen screen-info hidden">
+
+        <div class="white-bg info-wrapper">
+            <div class="btn-close" onclick="hideInfo()" ontouchstart>
+                <svg width="3.5rem" height="3.5rem" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="28" cy="28" r="28" fill="#AF0000" />
+                    <path
+                        d="M27.6465 25.613L28 25.9665L28.3535 25.613L36.0333 17.9335L36.0388 17.928L36.0442 17.9223C36.1677 17.7908 36.3165 17.6857 36.4817 17.6131C36.646 17.5409 36.8232 17.5024 37.0026 17.5C37.3994 17.5008 37.7797 17.6587 38.0604 17.9393C38.3417 18.2206 38.4997 18.6021 38.4997 18.9999H38.4996L38.4998 19.0094C38.5031 19.1864 38.4703 19.3623 38.4032 19.5262C38.3362 19.6902 38.2363 19.8386 38.1098 19.9626L38.1084 19.9639L30.3287 27.6434L29.9705 27.9969L30.3264 28.3528L38.1061 36.1322L38.1061 36.1322L38.11 36.1361C38.3459 36.3668 38.4851 36.6785 38.4996 37.0079C38.4972 37.4023 38.3394 37.78 38.0604 38.0591C37.7791 38.3404 37.3976 38.4984 36.9997 38.4984H36.9894L36.979 38.4988C36.7934 38.5065 36.6082 38.4756 36.4352 38.4079C36.2624 38.3403 36.1056 38.2375 35.9746 38.1062C35.9744 38.106 35.9742 38.1058 35.974 38.1056L28.3558 30.3878L28.0023 30.0296L27.6465 30.3855L19.9467 38.0849L19.9466 38.0849L19.941 38.0907C19.818 38.2178 19.6709 38.3192 19.5084 38.3892C19.3469 38.4588 19.1732 38.4959 18.9973 38.4984C18.6006 38.4976 18.2202 38.3397 17.9396 38.0591C17.6583 37.7778 17.5003 37.3963 17.5003 36.9986H17.5004L17.5002 36.9891C17.4969 36.812 17.5297 36.6361 17.5968 36.4722C17.6638 36.3083 17.7637 36.1598 17.8902 36.0358L17.8916 36.0345L25.6713 28.3551L26.0295 28.0015L25.6736 27.6456L17.8939 19.8662L17.8939 19.8662L17.89 19.8624C17.6541 19.6316 17.5149 19.3199 17.5004 18.9905C17.5028 18.5961 17.6606 18.2184 17.9396 17.9393C18.2202 17.6588 18.6004 17.5008 18.9971 17.5C19.3454 17.5052 19.6795 17.6464 19.9267 17.8935L27.6465 25.613Z"
+                        fill="white" stroke="#EAEAEA" />
+                </svg>
+
+            </div>
+            <div class="btn-wrapper secondary-btn disabled">
+                <div class="btn">
+                    INFO
+                </div>
+
+            </div>
+            <p>
+                Представь себе: каждая твоя покупка корма для
+                кота превращается в
+                кучу ТОn и $mASS.
+
+            </p>
+            <p>
+                Просто корми пушистого друга, и когда он сходит в лоток, собирай свою прибыль - монеты становятся
+                твоими!
+
+            </p>
+            <p>
+                На данный момент игра находится во 2 ФАЗЕ, и у нас есть 5 видов корма
+            </p>
+            <p>
+                0.1 TON = 0.2 TON <br>
+                0.5 TON = 0.75 TON
+                <br>
+                1 TON = 1.5 TON
+            </p>
+        </div>
+    </div>
+    <div id="fair" class="screen screen-info screen-fair hidden">
+
+        <div class="white-bg info-wrapper">
+            <div class="btn-close" onclick=" hidefair()" ontouchstart>
+                <svg width="3.5rem" height="3.5rem" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="28" cy="28" r="28" fill="#AF0000" />
+                    <path
+                        d="M27.6465 25.613L28 25.9665L28.3535 25.613L36.0333 17.9335L36.0388 17.928L36.0442 17.9223C36.1677 17.7908 36.3165 17.6857 36.4817 17.6131C36.646 17.5409 36.8232 17.5024 37.0026 17.5C37.3994 17.5008 37.7797 17.6587 38.0604 17.9393C38.3417 18.2206 38.4997 18.6021 38.4997 18.9999H38.4996L38.4998 19.0094C38.5031 19.1864 38.4703 19.3623 38.4032 19.5262C38.3362 19.6902 38.2363 19.8386 38.1098 19.9626L38.1084 19.9639L30.3287 27.6434L29.9705 27.9969L30.3264 28.3528L38.1061 36.1322L38.1061 36.1322L38.11 36.1361C38.3459 36.3668 38.4851 36.6785 38.4996 37.0079C38.4972 37.4023 38.3394 37.78 38.0604 38.0591C37.7791 38.3404 37.3976 38.4984 36.9997 38.4984H36.9894L36.979 38.4988C36.7934 38.5065 36.6082 38.4756 36.4352 38.4079C36.2624 38.3403 36.1056 38.2375 35.9746 38.1062C35.9744 38.106 35.9742 38.1058 35.974 38.1056L28.3558 30.3878L28.0023 30.0296L27.6465 30.3855L19.9467 38.0849L19.9466 38.0849L19.941 38.0907C19.818 38.2178 19.6709 38.3192 19.5084 38.3892C19.3469 38.4588 19.1732 38.4959 18.9973 38.4984C18.6006 38.4976 18.2202 38.3397 17.9396 38.0591C17.6583 37.7778 17.5003 37.3963 17.5003 36.9986H17.5004L17.5002 36.9891C17.4969 36.812 17.5297 36.6361 17.5968 36.4722C17.6638 36.3083 17.7637 36.1598 17.8902 36.0358L17.8916 36.0345L25.6713 28.3551L26.0295 28.0015L25.6736 27.6456L17.8939 19.8662L17.8939 19.8662L17.89 19.8624C17.6541 19.6316 17.5149 19.3199 17.5004 18.9905C17.5028 18.5961 17.6606 18.2184 17.9396 17.9393C18.2202 17.6588 18.6004 17.5008 18.9971 17.5C19.3454 17.5052 19.6795 17.6464 19.9267 17.8935L27.6465 25.613Z"
+                        fill="white" stroke="#EAEAEA" />
+                </svg>
+
+            </div>
+            <div class="title-info">FairLaunch</div>
+            <div class="available-wrap">
+                <span>Available</span>
+                <div class="avail-count-wrap">
+                    <span id="avail-count"> 0.095</span>
+                </div>
+            </div>
+            <label class="amount-wrap">
+                <span>Amount Ton:</span><br>
+                <input type="number" name="" id="" placeholder="0.1">
+            </label>
+            <div class="liner-ton-wrapper">
+                <div class="liner-ton"></div>
+                <div class="liner-ton-desc">
+                    <span id="count-liner-ton">5688.20 ton</span>
+                    <span>Ton</span>
+                </div>
+            </div>
+            <div class="btn-wrapper threety-btn">
+                <div class="btn">
+                    Contribution
+                </div>
+            </div>
+            <div class="desc-fair">
+                <div class="fair-desc-item">
+                    <span class="fair-desc-item-title">my contribution</span>
+                    <span class="fair-desc-item-desc">о.1000 ton</span>
+                </div>
+                <div class="fair-desc-item">
+                    <span class="fair-desc-item-title">Approximate.price</span>
+                    <span class="fair-desc-item-desc">1 mass = 0.00018961 ton</span>
+                </div>
+                <div class="fair-desc-item">
+                    <span class="fair-desc-item-title">total participants</span>
+                    <span class="fair-desc-item-desc">7379</span>
+                </div>
+                <div class="fair-desc-item">
+                    <span class="fair-desc-item-title">limit per 1 account</span>
+                    <span class="fair-desc-item-desc">999 tons</span>
+                </div>
+                <div class="fair-desc-item">
+                    <span class="fair-desc-item-title">total emissions</span>
+                    <span class="fair-desc-item-desc">$100,000,000</span>
+                </div>
+                <div class="fair-desc-item">
+                    <span class="fair-desc-item-title">allocated for presale</span>
+                    <span class="fair-desc-item-desc">$35,000,000</span>
+                </div>
+                <div class="fair-desc-item">
+                    <span class="fair-desc-item-title">allocated for liquidity</span>
+                    <span class="fair-desc-item-desc">$15,000,000</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="top-up" class="screen screen-info screen-top-up hidden">
+
+        <div class="white-bg info-wrapper">
+            <div class="btn-close" onclick="hidetopUp()" ontouchstart>
+                <svg width="3.5rem" height="3.5rem" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="28" cy="28" r="28" fill="#AF0000" />
+                    <path
+                        d="M27.6465 25.613L28 25.9665L28.3535 25.613L36.0333 17.9335L36.0388 17.928L36.0442 17.9223C36.1677 17.7908 36.3165 17.6857 36.4817 17.6131C36.646 17.5409 36.8232 17.5024 37.0026 17.5C37.3994 17.5008 37.7797 17.6587 38.0604 17.9393C38.3417 18.2206 38.4997 18.6021 38.4997 18.9999H38.4996L38.4998 19.0094C38.5031 19.1864 38.4703 19.3623 38.4032 19.5262C38.3362 19.6902 38.2363 19.8386 38.1098 19.9626L38.1084 19.9639L30.3287 27.6434L29.9705 27.9969L30.3264 28.3528L38.1061 36.1322L38.1061 36.1322L38.11 36.1361C38.3459 36.3668 38.4851 36.6785 38.4996 37.0079C38.4972 37.4023 38.3394 37.78 38.0604 38.0591C37.7791 38.3404 37.3976 38.4984 36.9997 38.4984H36.9894L36.979 38.4988C36.7934 38.5065 36.6082 38.4756 36.4352 38.4079C36.2624 38.3403 36.1056 38.2375 35.9746 38.1062C35.9744 38.106 35.9742 38.1058 35.974 38.1056L28.3558 30.3878L28.0023 30.0296L27.6465 30.3855L19.9467 38.0849L19.9466 38.0849L19.941 38.0907C19.818 38.2178 19.6709 38.3192 19.5084 38.3892C19.3469 38.4588 19.1732 38.4959 18.9973 38.4984C18.6006 38.4976 18.2202 38.3397 17.9396 38.0591C17.6583 37.7778 17.5003 37.3963 17.5003 36.9986H17.5004L17.5002 36.9891C17.4969 36.812 17.5297 36.6361 17.5968 36.4722C17.6638 36.3083 17.7637 36.1598 17.8902 36.0358L17.8916 36.0345L25.6713 28.3551L26.0295 28.0015L25.6736 27.6456L17.8939 19.8662L17.8939 19.8662L17.89 19.8624C17.6541 19.6316 17.5149 19.3199 17.5004 18.9905C17.5028 18.5961 17.6606 18.2184 17.9396 17.9393C18.2202 17.6588 18.6004 17.5008 18.9971 17.5C19.3454 17.5052 19.6795 17.6464 19.9267 17.8935L27.6465 25.613Z"
+                        fill="white" stroke="#EAEAEA" />
+                </svg>
+
+            </div>
+            <div class="title-info">Top-up</div>
+            <div class="up-items">
+                <div class="up-item">
+                    <div class="up-item-wrapper">
+                        <div class="up-item-img">
+                            <img src="./img/top-up.png" alt="">
+                        </div>
+                        <div class="up-item-title">Qty ton</div>
+                    </div>
+                    <div class="btn btn-price">Price$</div>
+                </div>
+                <div class="up-item">
+                    <div class="up-item-wrapper">
+                        <div class="up-item-img">
+                            <img src="./img/top-up.png" alt="">
+                        </div>
+                        <div class="up-item-title">Qty ton</div>
+                    </div>
+                    <div class="btn btn-price">Price$</div>
+                </div>
+                <div class="up-item">
+                    <div class="up-item-wrapper">
+                        <div class="up-item-img">
+                            <img src="./img/top-up.png" alt="">
+                        </div>
+                        <div class="up-item-title">Qty ton</div>
+                    </div>
+                    <div class="btn btn-price">Price$</div>
+                </div>
+                <div class="up-item">
+                    <div class="up-item-wrapper">
+                        <div class="up-item-img">
+                            <img src="./img/top-up.png" alt="">
+                        </div>
+                        <div class="up-item-title">Qty ton</div>
+                    </div>
+                    <div class="btn btn-price">Price$</div>
+                </div>
+                <div class="up-item">
+                    <div class="up-item-wrapper">
+                        <div class="up-item-img">
+                            <img src="./img/top-up.png" alt="">
+                        </div>
+                        <div class="up-item-title">Qty ton</div>
+                    </div>
+                    <div class="btn btn-price">Price$</div>
+                </div>
+                <div class="up-item">
+                    <div class="up-item-wrapper">
+                        <div class="up-item-img">
+                            <img src="./img/top-up.png" alt="">
+                        </div>
+                        <div class="up-item-title">Qty ton</div>
+                    </div>
+                    <div class="btn btn-price">Price$</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="script.js?ver=1"></script>
+</body>
+
+</html>
